@@ -7,8 +7,8 @@ api_id = 17349
 api_hash = '344583e45741c457fe1862106095a5eb'
 
 # fill in your own details here
-phone = 'PHONE_NUMBER_WITH_PREFIX'
-username = 'YOUR_USERNAME'
+phone = '+917002909165'
+username = 'Nayanmoni'
 password = 'YOUR_PASSWORD'  # if you have two-step verification enabled
 
 # content of the automatic reply
@@ -28,7 +28,7 @@ def main():
             # to check the id you can print(event.message.from_id) and get a message in the chat
             # so you will have the id of that conversation
             # CHANGE 123456789 WITH THE BOT BTC FAUCET FROM_ID
-            if event.message.from_id == 123456789:
+            if event.message.from_id == 769196990:
                 if "balance" in event.message.message:
                     # it prints the balance in console
                     print(event.message.message[event.message.message.index("balance"):])
@@ -40,7 +40,7 @@ def main():
             # your from_id, the id of the conversation with yourself
             # used to turn off the script from a telegram client
             # CHANGE 123456789 WITH YOUR FROM_ID
-            elif event.message.from_id == 123456789:
+            elif event.message.from_id == 769196990:
                 # check if the message sent is equals to "TURNOFFTHESCRIPT"
                 if (event.is_private and event.message.message == "TURNOFFTHESCRIPT"):
                     newmessage = "Ok Boss, turning off!"
